@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/application_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/b612_mono"
+        android:text="@string/app_name"
+        android:layout_marginTop="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/application_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="50sp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:hint="@string/hint_user_field"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:autofillHints="" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/user_field"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5sp"
+        android:src="@drawable/broken" />
+
+    <TextView
+        android:id="@+id/result_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40sp"
+        android:fontFamily="@font/b612_mono"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/result2_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40sp"
+        android:fontFamily="@font/b612_mono"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/result3_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result2_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40sp"
+        android:fontFamily="@font/b612_mono"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/main_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        android:text="@string/button_text"
+        android:textColor="#FDFDFD"
+        android:padding="12dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginBottom="32dp" />
+
+</RelativeLayout>
